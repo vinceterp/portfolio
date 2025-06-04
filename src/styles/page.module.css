@@ -13,7 +13,8 @@
   min-height: 100svh;
   padding: 80px;
   gap: 64px;
-  font-family: var(--font-geist-sans);
+  font-family: var(--font-geist-mono);
+  background-color: rgb(40, 40, 40);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,13 +36,14 @@
 }
 
 .main ol {
-  font-family: var(--font-geist-mono);
+  font-family: var(--font-press-start);
   padding-left: 0;
   margin: 0;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.01em;
   list-style-position: inside;
+  font-weight: 100;
 }
 
 .main li:not(:last-of-type) {
