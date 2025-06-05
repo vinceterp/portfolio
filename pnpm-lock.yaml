@@ -7,6 +7,9 @@ settings:
 importers:
   .:
     dependencies:
+      "@emotion/react":
+        specifier: ^11.14.0
+        version: 11.14.0(@types/react@18.3.11)(react@18.3.1)
       "@emotion/styled":
         specifier: ^11.14.0
         version: 11.14.0(@emotion/react@11.14.0(@types/react@18.3.11)(react@18.3.1))(@types/react@18.3.11)(react@18.3.1)
@@ -22,6 +25,9 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
+      use-dark-mode:
+        specifier: ^2.3.1
+        version: 2.3.1(react@18.3.1)
     devDependencies:
       "@types/node":
         specifier: ^20
@@ -576,6 +582,14 @@ packages:
       {
         integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==,
       }
+
+  "@use-it/event-listener@0.1.7":
+    resolution:
+      {
+        integrity: sha512-hgfExDzUU9uTRTPDCpw2s9jWTxcxmpJya3fK5ADpf5VDpSy8WYwY/kh28XE0tUcbsljeP8wfan48QvAQTSSa3Q==,
+      }
+    peerDependencies:
+      react: ">=16.8.0"
 
   acorn-jsx@5.3.2:
     resolution:
@@ -2534,6 +2548,22 @@ packages:
         integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==,
       }
 
+  use-dark-mode@2.3.1:
+    resolution:
+      {
+        integrity: sha512-hmcdJR96tTustRQdaQwe6jMrZHnmPqXBxgy4jaQ4gsfhwajsCpjECuq9prgDe9XxMx/f9r96o2/md6O4Lwhwjg==,
+      }
+    peerDependencies:
+      react: ^16.8.0
+
+  use-persisted-state@0.3.3:
+    resolution:
+      {
+        integrity: sha512-pCNlvYC8+XjRxwnIut4teGC9f2p9aD88R8OGseQGZa2dvqG/h1vEGk1vRE1IZG0Vf161UDpn+NlW4+UGubQflQ==,
+      }
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+
   which-boxed-primitive@1.0.2:
     resolution:
       {
@@ -2971,6 +3001,10 @@ snapshots:
       eslint-visitor-keys: 3.4.3
 
   "@ungap/structured-clone@1.2.0": {}
+
+  "@use-it/event-listener@0.1.7(react@18.3.1)":
+    dependencies:
+      react: 18.3.1
 
   acorn-jsx@5.3.2(acorn@8.13.0):
     dependencies:
@@ -4331,6 +4365,17 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
+
+  use-dark-mode@2.3.1(react@18.3.1):
+    dependencies:
+      "@use-it/event-listener": 0.1.7(react@18.3.1)
+      react: 18.3.1
+      use-persisted-state: 0.3.3(react@18.3.1)
+
+  use-persisted-state@0.3.3(react@18.3.1):
+    dependencies:
+      "@use-it/event-listener": 0.1.7(react@18.3.1)
+      react: 18.3.1
 
   which-boxed-primitive@1.0.2:
     dependencies:
