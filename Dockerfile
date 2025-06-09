@@ -5,7 +5,8 @@ FROM node:20-slim AS base
 WORKDIR /app
 
 # Copy package.json and pnpm-lock.yaml
-COPY package.json pnpm-lock.yaml ./
+COPY package.json ./
+COPY pnpm-lock.yaml ./
 
 # Install pnpm globally
 RUN npm i -g pnpm
