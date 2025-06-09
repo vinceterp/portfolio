@@ -33,16 +33,6 @@ jobs:
                         --name portfolio \
                         -p 3000:3000 \
                         vincentvanity/portfolio:latest
-            -   name: Clean up unused images
-                run: docker image prune -f
-            -   name: Restart Nginx
-                run: |
-                    sudo systemctl restart nginx || true
-            -   name: Restart PM2
-                run: |
-                    pm2 restart all || true
-                    pm2 save || true
-                    pm2 startup || true
             -   name: Notify deployment success
                 run: echo "Deployment to EC2 successful!"
         
