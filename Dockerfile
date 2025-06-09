@@ -4,11 +4,11 @@ FROM node:20-slim AS base
 # Set the working directory in the container
 WORKDIR /app
 
-# Install pnpm globally
-RUN npm i -g pnpm
-
 # Copy package.json and pnpm-lock.yaml
 COPY package.json pnpm-lock.yaml ./
+
+# Install pnpm globally
+RUN npm i -g pnpm
 
 # Install dependencies using pnpm
 RUN pnpm install
