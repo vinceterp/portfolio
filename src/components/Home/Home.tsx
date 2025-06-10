@@ -6,16 +6,19 @@ export const Home = () => {
   return (
     <div className={styles.page}>
       <Typography>
-        Full-stack software engineer with 7+ years of experience building
-        high-performance, scalable web and mobile applications across fintech,
-        healthtech, and hospitality. Proven track record delivering
-        production-ready software for clients like MGM Resorts, Alessa Cloud
-        Solutions, and Symptai. Expertise in React, TypeScript, Node.js, CI/CD,
-        and secure authentication. Known for writing clean code, mentoring
-        teams, and driving full product lifecycle delivery in agile
-        environments. Experienced in both monolithic and microservices
-        architectures.
+        Full-Stack Software Engineer with 6 years of experience delivering
+        scalable web and mobile applications using React, React Native,
+        TypeScript and Node.js. Currently contributing to high-impact projects
+        at MGM Resorts International, one of the top global hospitality
+        companies grossing $17B annually, where I build and maintain performant,
+        user-focused digital solutions. Skilled in end-to-end development,
+        RESTful/GraphQL API integration, and Agile collaboration to drive
+        continuous delivery and innovation.
       </Typography>
+      <Typography>
+        More coming soon! This is a work in progress, so please check back
+      </Typography>
+
       <Footer />
     </div>
   );
