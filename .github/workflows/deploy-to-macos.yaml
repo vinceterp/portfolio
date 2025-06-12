@@ -9,6 +9,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Install Docker
+        run: |
+          brew install docker 
+          brew services start docker
       - name: Build docker image
         run: docker build -t vincentvanity/portfolio .
       - name: Login to Docker Hub
