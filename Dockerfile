@@ -20,6 +20,8 @@ COPY . .
 # Build the Next.js application
 RUN pnpm run build
 
+ENV NODE_ENV production
+
 # Expose the port the app runs on
 EXPOSE 3000
 
