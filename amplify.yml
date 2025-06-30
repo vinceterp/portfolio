@@ -9,7 +9,7 @@ frontend:
       commands:
         - 'pnpm run build'       # Run your pnpm build command
   artifacts:
-    baseDirectory: dist # Or your Next.js output directory
+    baseDirectory: .next # Or your Next.js output directory
     files:
       - '**/*'
   cache:
