@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - 'npm install -g pnpm'  # Install pnpm globally
+        - 'pnpm install'         # Install project dependencies using pnpm
+    build:
+      commands:
+        - 'pnpm run build'       # Run your pnpm build command
+  artifacts:
+    baseDirectory: dist # Or your Next.js output directory
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - 'node_modules/**/*'
